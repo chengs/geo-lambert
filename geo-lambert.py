@@ -28,6 +28,10 @@ def _check_input(x, y):
 
     return x, y
 
+import pyximport
+pyximport.install(setup_args={'include_dirs':['./']})
+
+from clambert import xyToWgs84
 
 def lambert93_to_wgs84(x, y):
     # type (float, float) -> (float, float)
@@ -41,15 +45,13 @@ def lambert93_to_wgs84(x, y):
     Returns:
         lat, lon (float, float): WGS84 corrdinate in radius
         
-    >>> lambert93_to_wgs84(668832.5384, 6950138.7285)
-    (2.5686536, 49.6496110)
-    >>> lambert93_to_wgs84(668850, 6950151)
-    (2.5688944, 49.6497221)
+    >>> print("%.4f, %.4f" % lambert93_to_wgs84(668832.5384, 6950138.7285))
+    2.5687, 49.6496
+    >>> print("%.4f, %.4f" % lambert93_to_wgs84(668850, 6950151))
+    2.5689, 49.6497
     """
     _x, _y = _check_input(x, y)
-    # TODO: compute lon lat
-    lat = 0.
-    lon = 0.
+    lon, lat = xyToWgs84(x, y, 5) #LAMBERT_93=5
     return lon, lat
 
 def lambertIIe_to_wgs84(x, y):
@@ -64,16 +66,12 @@ def lambertIIe_to_wgs84(x, y):
     Returns:
         lat, lon (float, float): WGS84 corrdinate in radius
 
-    >>> lambertIIe_to_wgs84(369419.0, 1986498)
-    (-0.5791343, 44.8407050)
-    >>> lambertIIe_to_wgs84(668850, 6950151)
-    (6.6597230, 84.7306541)
-
+    >>> print("%.4f, %.4f" % lambertIIe_to_wgs84(73150, 2396665))
+    -4.7802, 48.3541
     """
     _x, _y = _check_input(x, y)
     # TODO: compute lon lat
-    lat = 0.
-    lon = 0.
+    lon, lat = xyToWgs84(x, y, 4) #LAMBERT_II_E=4
     return lon, lat
 
 if __name__ == '__main__':

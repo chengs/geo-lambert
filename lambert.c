@@ -1,6 +1,7 @@
 /*
  *	Source des algorithmes : http://geodesie.ign.fr/contenu/fichiers/documentation/algorithmes/notice/NTG_71.pdf
- *  
+ *  Code from https://github.com/yageek/lambert
+ *  Author: yageek
 */
 
 #include "lambert.h"
