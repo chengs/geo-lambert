@@ -1,4 +1,5 @@
 from __future__ import print_function
+from clambert import xyToWgs84
 
 
 def _docstring_example(x, y):
@@ -28,10 +29,6 @@ def _check_input(x, y):
 
     return x, y
 
-import pyximport
-pyximport.install(setup_args={'include_dirs':['./']})
-
-from clambert import xyToWgs84
 
 def lambert93_to_wgs84(x, y):
     # type (float, float) -> (float, float)
