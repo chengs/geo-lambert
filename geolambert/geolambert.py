@@ -1,5 +1,5 @@
 from __future__ import print_function, absolute_import
-if __package__ is None:
+if __name__ == '__main__':
     from clambert import xyToWgs84
 else:
     from .clambert import xyToWgs84
