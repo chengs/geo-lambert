@@ -1,5 +1,8 @@
-from __future__ import print_function
-from clambert import xyToWgs84
+from __future__ import print_function, absolute_import
+if __name__ == '__main__':
+    from clambert import xyToWgs84
+else:
+    from .clambert import xyToWgs84
 
 
 def _docstring_example(x, y):
