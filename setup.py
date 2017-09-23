@@ -6,7 +6,7 @@ with open('README.rst', 'r') as f:
 
 setup_args = {
     'name': 'geolambert',
-    'version': '0.1.0',
+    'version': '0.1.1',
     'packages': ['geolambert'],
     'description': 'A Python library and provides functions to covert geographical corrdinates from LambertIIe/Lambert93 systems to WGS84',
     'long_description': readme,
