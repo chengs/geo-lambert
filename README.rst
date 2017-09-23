@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-|Travis|_ |Python27|_ |Python35|_
+|Travis|_ |Python27|_ |Python35|_ |PyPi|_
 
 .. |Travis| image:: https://travis-ci.org/chengs/geolambert-python.svg?branch=master
 .. _Travis: https://travis-ci.org/chengs/geolambert-python
