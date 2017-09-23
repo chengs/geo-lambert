@@ -22,13 +22,6 @@ geolambert-python is a Python library and provides functions to covert
 geographical corrdinates from LambertIIe/Lambert93 systems to WGS84 using
 IGN Algorithms. C codes (`lambert.c <geolambert/clambert/lambert.c>`_, `lambert.h <geolambert/clambert/lambert.h>`_) come from `yageek/lambert <https://github.com/yageek/lambert>`_.
 
-Alternatives:
-
-- C++: https://github.com/yageek/lambert
-- Jave: https://github.com/yageek/lambert-java
-- Python: https://github.com/yageek/lambert-python
-- Python: https://pypi.python.org/pypi/pyproj + PROJ.4
-
 Website: https://github.com/chengs/geolambert-python/
 
 Usage
@@ -70,3 +63,11 @@ To install geolambert-python from source ::
 or install with compling codes using `Cython <http://cython.org/#download>`_ ::
 
     python setup.py install --cython
+    
+Alternatives
+------------
+
+- C++: https://github.com/yageek/lambert
+- Jave: https://github.com/yageek/lambert-java
+- Python: https://github.com/yageek/lambert-python
+- Python: https://pypi.python.org/pypi/pyproj + PROJ.4
