@@ -2,21 +2,21 @@
 
 |Travis|_ |Python27|_ |Python35|_
 
-.. |Travis| image:: https://travis-ci.org/chengs/geo-lambert.svg?branch=master
-.. _Travis: https://travis-ci.org/chengs/geo-lambert
+.. |Travis| image:: https://travis-ci.org/chengs/geolambert-python.svg?branch=master
+.. _Travis: https://travis-ci.org/chengs/geolambert-python
 
 .. |Python27| image:: https://img.shields.io/badge/python-2.7-blue.svg
-.. _Python27: https://github.com/chengs/geolambert-python/
+.. _Python27: https://badge.fury.io/py/geolambert
 
 .. |Python35| image:: https://img.shields.io/badge/python-3.5-blue.svg
-.. _Python35: https://github.com/chengs/geolambert-python/
+.. _Python35: https://badge.fury.io/py/geolambert
 
-.. |PyPi| image:: https://badge.fury.io/py/scikit-learn.svg
-.. _PyPi: https://github.com/chengs/geolambert-python/
+.. |PyPi| image:: https://badge.fury.io/py/geolambert.svg
+.. _PyPi: https://badge.fury.io/py/geolambert
 
 
 geolambert-python
-============
+=================
 
 geolambert-python is a Python library and provides functions to covert 
 geographical corrdinates from LambertIIe/Lambert93 systems to WGS84 using
